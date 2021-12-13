@@ -16,10 +16,12 @@ def solve():
         # Loop for 256 days
         for _ in range(256):
             spawn_count = timer[0]
-            for i in range(8, 0, -1):
-                timer[i - 1] = timer[i]
+            for i in range(8):
+                timer[i] = timer[i + 1]
+            timer[8] = 0
             timer[6] += spawn_count
             timer[8] += spawn_count
+            print(timer)
         
         result = sum(timer)
 
