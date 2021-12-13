@@ -21,7 +21,6 @@ def solve():
             timer[8] = 0
             timer[6] += spawn_count
             timer[8] += spawn_count
-            print(timer)
         
         result = sum(timer)
 
@@ -30,5 +29,4 @@ def solve():
 def main():
     print(f'Answer: {solve()}')
 
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()
